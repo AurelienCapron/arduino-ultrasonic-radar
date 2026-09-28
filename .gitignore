@@ -1,0 +1,18 @@
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Fichiers temporaires Processing
+applet/
+application.macosx/
+application.windows*/
+application.linux*/
+data/
+
+# Fichiers de compilation Arduino
+*.hex
+*.elf
+*.bin
+build/

@@ -1,0 +1,10 @@
+﻿Nom,Quantité,Composant
+"D1",1,"Vert LED"
+"D2",1,"Rouge LED"
+"R1, R2",2,"300 Ω Résistance"
+"S1",1," Bouton-poussoir"
+"DIST1",1," Capteur de distance à ultrasons (4 broches)"
+"PIEZO2",1," Buzzer piézoélectrique"
+"1",1," Mini platine d'expérimentation"
+"U1",1," Arduino Uno R3"
+"SERVO3",1,"Positionnel Microservomoteur"
