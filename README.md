@@ -22,7 +22,7 @@ Système de détection périmétrique et de radar motorisé sur **180°** conçu
 
 | Démonstration de l'Interface Radar (Processing) | Démonstration du Montage Matériel (Arduino) |
 | :---: | :---: |
-| 🎥 **[Lire la vidéo `radar_gui_demo.mov`](assets/radar_gui_demo.mov)** | 🎥 **[Lire la vidéo `arduino_setup_demo.mov`](assets/arduino_setup_demo.mov)** |
+|  **[Lire la vidéo `radar_gui_demo.mov`](assets/radar_gui_demo.mov)** |  **[Lire la vidéo `arduino_setup_demo.mov`](assets/arduino_setup_demo.mov)** |
 | *Balayage temps réel, détection de cible (< 40 cm) et persistance* | *Rotation du servomoteur (15°–165°), LEDs d'état et bouton muet* |
 
 ---
@@ -56,8 +56,8 @@ arduino-ultrasonic-radar/
 ### 2. Schéma Électrique Normé
 ![Schéma Électrique](assets/electrical_schematic.png)
 
-* 📄 **[Télécharger le schéma électrique haute définition (PDF)](assets/electrical_schematic.pdf)**
-* 📋 **[Consulter la liste des composants / Bill of Materials (CSV)](assets/bom_components.csv)**
+*  **[Télécharger le schéma électrique haute définition (PDF)](assets/electrical_schematic.pdf)**
+*  **[Consulter la liste des composants / Bill of Materials (CSV)](assets/bom_components.csv)**
 
 ### 3. Schéma Synoptique et Brochage (Pinout)
 
@@ -96,7 +96,7 @@ arduino-ultrasonic-radar/
 ### 1. Calcul de la distance par ultrasons (Arduino)
 À chaque degré d'angle du servomoteur, le capteur HC-SR04 émet une onde sonore. La vitesse du son dans l'air étant d'environ 340 m/s (soit 0,034 cm/µs), la distance aller-retour est calculée par la formule :
 
-$$\text{Distance (cm)} = \frac{\text{Durée (\mu s)} \times 0,034}{2}$$
+$$\text{Distance (cm)} = \frac{\text{Durée (µs)} \times 0,034}{2}$$
 
 ### 2. Interrupteur logiciel « Silence Tactique » avec anti-rebond
 À chaque cycle (`faireUnCycle`), l'Arduino lit l'état de la broche `D2`. Grâce à une détection de front descendant (`etatBouton == LOW && dernierEtatBouton == HIGH`) combinée à un délai anti-rebond de `50 ms`, une simple pression inverse l'état booléen `buzzerAutorise` (`ON <-> OFF`), permettant de couper l'alarme sonore tout en conservant l'alerte visuelle (LED rouge + écran radar).
